@@ -110,8 +110,6 @@ bool boggleHelper(const std::set<std::string>& dict, const std::set<std::string>
 	if (!foundLonger && dict.find(word) != dict.end()) {
         result.insert(word);
         return true;
-    }
-	bool foundWord = false;
-	
+    }	
 	return foundLonger || dict.find(word) != dict.end();
 }
